@@ -4,6 +4,7 @@ class Song
   @@count = 0 
   @@genres = []
   @@artists = []
+  
   def initialize name, artist, genre
     @name = name 
     @artist = artist
@@ -33,6 +34,7 @@ def self.genre_count
     else 
       num_of_genres [each_genre] = 1 
     end 
+  end 
     num_of_genres
 end 
 
