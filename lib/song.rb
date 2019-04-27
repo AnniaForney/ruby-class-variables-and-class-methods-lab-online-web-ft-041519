@@ -14,19 +14,19 @@ class Song
     @@artists << artist
 end 
 
-def self.count 
+def .count 
   @@count
 end 
 
-def self.artists
+def .artists
   @@artists.uniq  
 end 
 
-def self.genres 
+def .genres 
   @@genres.uniq 
 end 
 
-def self.genre_count
+def .genre_count
   num_of_genres = {} 
   @@genres.each do |each_genre|
     if num_of_genres [each_genre]
@@ -38,7 +38,7 @@ def self.genre_count
     num_of_genres
 end 
 
-def self.artist_count
+def .artist_count
   num_of_artists = {}
   @@artists.each do |each_artist|
     if num_of_artists[each_artist]
