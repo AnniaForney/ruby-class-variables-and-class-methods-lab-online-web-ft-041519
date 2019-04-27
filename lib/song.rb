@@ -34,19 +34,12 @@ def self.genre_count
   @@genres.each  {|genre| genre_count[genre] += 1} 
   genre_count
     end 
-  end 
-    num_of_genres
-end 
 
-def .artist_count
-  num_of_artists = {}
-  @@artists.each do |each_artist|
-    if num_of_artists[each_artist]
-      num_of_artists[each_artist] += 1 
-    else 
-      num_of_artists[each_artist] = 1 
+def self.artist_count
+  artist_count = {}
+  @@artists.each {|artist| artist_count[artist] += 1} 
+  artist_count
     end 
-  end 
-  num_of_artists 
+    binding.pry 
 end 
 
