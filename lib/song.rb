@@ -17,20 +17,20 @@ class Song
     @@artists << artist
 end 
 
-def .count 
+def self.count 
   @@count
 end 
 
-def .artists
+def self.artists
   @@artists.uniq  
 end 
 
-def .genres 
+def self.genres 
   @@genres.uniq 
 end 
 
-def .genre_count
-  num_of_genres = {} 
+def self.genre_count
+  genre_count = {} 
   @@genres.each do |each_genre|
     if num_of_genres [each_genre]
       num_of_genres[each_genre] += 1 
